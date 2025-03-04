@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+
+h1, h3, h4 {
+    color: #2c3e50;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.card {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table img {
+    border-radius: 50%;
+}
+
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-image.loaded {
+    opacity: 1;
+}
+
+
+#imageGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+
+#loading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+#weatherResult h3 {
+    font-size: 24px;
+    color: #3498db;
+}
+
+#weatherResult p {
+    font-size: 18px;
+}
+
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#taskList li button {
+    background-color: #e74c3c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+#taskList li button:hover {
+    background-color: #c0392b;
+}
+
+
+#pokemonResult {
+    text-align: center;
+}
+
+#pokemonResult img {
+    width: 150px;
+    height: 150px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+#cryptoPrices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+#cryptoChart {
+    width: 100%;
+    height: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    table, #imageGallery {
+        width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+    }
+
+    #cryptoChart {
+        height: 250px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6 - Práctica con APIs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Actividad 6 - Práctica con APIs</h1>
+
+   
+    <div class="container">
+        
+        <div class="card">
+            <section id="ejercicio1">
+                <h2>1. Lista de Usuarios</h2>
+                <input type="text" id="searchUser" placeholder="Buscar usuario">
+                <table>
+                    <thead>
+                        <tr><th>Foto</th><th>Nombre</th><th>Correo</th></tr>
+                    </thead>
+                    <tbody id="userList"></tbody>
+                </table>
+            </section>
+
+            <section id="ejercicio2">
+                <h2>2. Noticias de Tecnología (Simuladas)</h2>
+                <input type="text" id="searchNews" placeholder="Buscar noticia">
+                <button id="getNews">Buscar Noticias</button>
+                <div id="newsList"></div>
+            </section>
+        </div>
+
+        
+        <div class="card">
+            <section id="ejercicio3">
+                <h2>3. Clima en Tiempo Real (Simulado)</h2>
+                <input type="text" id="cityInput" placeholder="Ingresa una ciudad">
+                <button id="getWeather">Consultar Clima</button>
+                <div id="weatherResult"></div>
+            </section>
+
+            <section id="ejercicio4">
+                <h2>4. Conversor de Monedas (Simulado)</h2>
+                <input type="number" id="amount" placeholder="Cantidad">
+                <input type="text" id="fromCurrency" placeholder="De (ej: USD)">
+                <input type="text" id="toCurrency" placeholder="A (ej: EUR)">
+                <button id="convertCurrency">Convertir</button>
+                <div id="currencyResult"></div>
+            </section>
+        </div>
+
+        
+        <div class="card">
+            <section id="ejercicio5">
+                <h2>5. Galería de Imágenes (Simuladas)</h2>
+                <input type="text" id="searchImage" placeholder="Buscar imágenes">
+                <button id="getImages">Buscar</button>
+                <div id="imageGallery"></div>
+            </section>
+
+            <section id="ejercicio6">
+                <h2>6. Pokédex</h2>
+                <input type="text" id="searchPokemon" placeholder="Nombre o Número">
+                <button id="getPokemon">Buscar</button>
+                <div id="pokemonResult"></div>
+            </section>
+        </div>
+
+        
+        <div class="card">
+            <section id="ejercicio7">
+                <h2>7. Lista de Películas (Simuladas)</h2>
+                <input type="text" id="searchMovie" placeholder="Buscar película">
+                <button id="getMovies">Buscar</button>
+                <div id="movieList"></div>
+            </section>
+
+            <section id="ejercicio8">
+                <h2>8. Seguimiento de Criptomonedas</h2>
+                <button id="getCrypto">Actualizar Precios</button>
+                <div id="cryptoPrices"></div>
+            </section>
+        </div>
+
+        
+        <div class="card">
+            <section id="ejercicio9">
+                <h2>9. Agenda de Tareas</h2>
+                <input type="text" id="newTask" placeholder="Nueva tarea">
+                <button id="addTask">Agregar</button>
+                <ul id="taskList"></ul>
+            </section>
+
+            <section id="ejercicio10">
+                <h2>10. Datos de Países</h2>
+                <input type="text" id="searchCountry" placeholder="Nombre del país">
+                <button id="getCountry">Buscar</button>
+                <div id="countryResult"></div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
